@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support.test:runner:1.0.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f86d3ecb9cf59f29a8f1aade93291adc/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f86d3ecb9cf59f29a8f1aade93291adc/jars/classes.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/plugins/gradle/wrapper/dists/gradle-6.5-bin/caches/transforms-2/files-2.1/1865bd68b84b597a38ee6a7c16fe7310/jars/classes.jar!/" />
+      <root url="file://$APPLICATION_HOME_DIR$/plugins/gradle/wrapper/dists/gradle-6.5-bin/caches/transforms-2/files-2.1/1865bd68b84b597a38ee6a7c16fe7310/AndroidManifest.xml" />
+      <root url="file://$APPLICATION_HOME_DIR$/plugins/gradle/wrapper/dists/gradle-6.5-bin/caches/transforms-2/files-2.1/1865bd68b84b597a38ee6a7c16fe7310/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support.test/runner/1.0.2/b2ce2342744a66e935dbc4a298259709a4c1f042/runner-1.0.2-sources.jar!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/plugins/gradle/wrapper/dists/gradle-6.5-bin/caches/modules-2/files-2.1/com.android.support.test/runner/1.0.2/b2ce2342744a66e935dbc4a298259709a4c1f042/runner-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

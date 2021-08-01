@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pratik.speechrecognition.MainActivity">
+
+
+    <Button
+        android:id="@+id/btn"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="96sp"
+        android:layout_height="96sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp"
+        android:background="@drawable/ic_baseline_mic_24" />
+
+    <EditText
+        android:id="@+id/editText"
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:ems="10"
+        android:hint="you will see text here"
+        android:inputType="textPersonName"
+        android:singleLine="false" />
+</RelativeLayout>
