@@ -1,7 +1,8 @@
 package com.example.pratik.speechrecognition;
 
 import android.Manifest;
-import android.content.Context;
+import android.annotation.SuppressLint;
+//import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -18,7 +19,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
+//import android.widget.Button;
 import android.widget.EditText;
 
 import java.util.ArrayList;
@@ -28,11 +29,11 @@ import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText editText;
-    SpeechRecognizer mSpeechRecognizer;
-    Intent mSpeechRecognizerIntent;
+    //EditText editText;
+    //SpeechRecognizer mSpeechRecognizer;
+    //Intent mSpeechRecognizerIntent;
     TextToSpeech t1;
-    Button btn;
+    //Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
                 //displaying the first match
                 if (matches != null)
                     editText.setText(matches.get(0));
+
             }
 
             @Override
@@ -111,10 +113,39 @@ public class MainActivity extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 Timer timer = new Timer();
                 timer.schedule(new TimerTask(){
+                    @SuppressLint("SetTextI18n")
                     @Override
                     public void run(){
                         String  str = editText.getText().toString();
-                        t1.speak(str, TextToSpeech.QUEUE_FLUSH,null,null);
+                        if(str.equals("hello")){
+                            editText.setText("Hello, how can i help you");
+                            t1.speak("Hello, how can i help you", TextToSpeech.QUEUE_FLUSH,null,null);
+                        }
+                        if(str.equals("what is your name")){
+                            editText.setText("My name is jarvis sir");
+                            t1.speak("My name is jarvis sir", TextToSpeech.QUEUE_FLUSH,null,null);
+                        }
+                        if(str.equals("how are you")){
+                            editText.setText("I m a robot, i am never tired, sir");
+                            t1.speak("I m a robot, i am never tired, sir", TextToSpeech.QUEUE_FLUSH,null,null);
+                        }
+                        if(str.equals("what can I ask you")){
+                            editText.setText("you can ask me anything to help you");
+                            t1.speak("you can ask me anything to help you", TextToSpeech.QUEUE_FLUSH,null,null);
+                        }
+                        if(str.equals("tell me a joke")){
+                            editText.setText("two sheep said baa in the field, other one said shit i wanna say that");
+                            t1.speak("two sheep said baa in the field, other one said shit i wanna say that", TextToSpeech.QUEUE_FLUSH,null,null);
+                        }
+                        if(str.equals("do you like Trump")){
+                            editText.setText("i will never consider him as a role model");
+                            t1.speak("i will never consider him as a role model", TextToSpeech.QUEUE_FLUSH,null,null);
+                        }
+                        if(str.equals("what is the situation")){
+                            editText.setText("there is an ambush, retreat sir");
+                            t1.speak("there is an ambush, retreat sir", TextToSpeech.QUEUE_FLUSH,null,null);
+                        }
+                        //t1.speak(str, TextToSpeech.QUEUE_FLUSH,null,null);
                     }
                 },1000);
             }
@@ -135,6 +166,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         findViewById(R.id.btn).setOnTouchListener(new View.OnTouchListener() {
+            @SuppressLint("ClickableViewAccessibility")
             @Override
             public boolean onTouch(View v, MotionEvent motionEvent) {
 

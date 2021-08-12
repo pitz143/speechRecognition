@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">speech recognition</string>
+    <string name="you_will_see_text_here">you will see text here</string>
 </resources>
